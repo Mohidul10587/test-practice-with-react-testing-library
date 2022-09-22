@@ -10,7 +10,7 @@ const CommentList = ({ allComments }) => {
     return (
       <div className=' border border-black p-6 m-3'>
         <ul>
-          {allComments.map((comment) => <li key={comment.text}>{comment.text}</li>)}
+          {allComments.map((comment) => <li key={comment.text}>{comment.text}{comment.id}</li>)}
         </ul>
 
       </div>
